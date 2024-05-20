@@ -1,5 +1,6 @@
-body { 
-    margin: 0; /* Remove the default margin */
+body {
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(209,107,22,1) 0%, rgba(255,0,43,1) 100%);
 }
 
 #image-row { 
@@ -16,17 +17,51 @@ img {
     height: auto;
 }
 
+.img-container {
+    overflow: hidden;
+  }
+
+#img-A:hover{
+    filter: contrast(200%);
+    transition: margin-right 2s ease-in-out .5s;
+    transition-property: all;
+}
+
+#img-B:hover{
+    filter: blur(5px);
+    transition: margin-right 2s ease-in-out .5s;
+    transition-property: all;
+}
+
+#img-C:hover{
+    filter: hue-rotate(90deg);
+    transition: margin-right 2s ease-in-out .5s;
+    transition-property: all;
+}
+
 #click-me {
     /* Centre the button */
     display: block;
     margin: auto;
 
     /* Style the button to look nice */
-    background-color: black;
+    background-color: orange;
     color: white;
     border: none;
     padding: 10px;
 
+    cursor: pointer;
+
     font-size: 2em;
     font-weight: bold;
+
+    box-shadow: 12px 2px 2px 1px rgba(0, 255, 221, 0.76);
+
+    position: relative; 
+    
+
+#click-me:hover{
+    background-color: turquoise;
+    }
+
 }
